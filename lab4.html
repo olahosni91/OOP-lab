@@ -1,0 +1,211 @@
+<html>
+    <head>
+       <title>OOP Lab4</title>
+    </head>
+    <body>
+        
+        <script>
+
+// Using Constructor Function:
+// function Person(fullName, sleepMode, money, healthRate){
+//     this.fullName = fullName;
+//     this.sleepMode = sleepMode;
+//     this.money = money;
+//     this.healthRate = healthRate;
+// }
+
+// Object.assign(Person.prototype, {
+//   eat (meals) { switch(meals){
+//         case 3:{
+//             this.healthRate = 100;
+//             break;
+//         }
+//         case 2: {
+//             this.healthRate = 75;
+//             break;
+//         }
+//         case 1:{
+//             this.healthRate = 50;
+//             break;
+//         }
+//         }
+//         alert(`Health Rate : ${this.healthRate} `);
+// },
+//   sleep (hours) {
+//     if(hours == 7)
+//         this.sleepMode = 'happy';
+//     else if(hours < 7)
+//         this.sleepMode = 'tired';
+//     else if(hours > 7)
+//         this.sleepMode = 'lazy';
+//     alert(`Sleep Mode : ${this.sleepMode}`); 
+
+// },
+//   buy (items) {
+//    if(items != undefined){
+//     for(let i=1; i <= items; i++)
+//             this.money -= 10;
+//      }
+//     alert(`Remained Money: ${this.money}`);
+
+// }
+// })
+// let person1 = new Person('ola','happy', 40,50);
+// person1.sleep();
+// person1.eat();
+// person1.buy();
+
+//Using Classes:
+// class Person {
+//     constructor(fullName, sleepMode, money, healthRate){
+//         this.fullName = fullName;
+//         this.sleepMode = sleepMode;
+//         this.money = money;
+//         this.healthRate = healthRate;
+//     }
+//     sleep (hours){
+//         if(hours == 7)
+//             this.sleepMode = 'happy';
+//         else if(hours < 7)
+//             this.sleepMode = 'tired';
+//         else if(hours > 7)
+//             this.sleepMode = 'lazy';
+//         alert(`Sleep Mode : ${this.sleepMode}`);
+
+//     }
+//     eat (meals){
+//         switch(meals){
+//         case 3:{
+//             this.healthRate = 100;
+//             break;
+//         }
+//         case 2: {
+//             this.healthRate = 75;
+//             break;
+//         }
+//         case 1:{
+//             this.healthRate = 50;
+//             break;
+//         }
+//         }
+//         alert(`Health Rate : ${this.healthRate} `);
+
+//     }
+//     buy(items){
+//      if(items != undefined)  {
+//         for(let i=1; i <= items; i++)
+//             this.money -= 10;
+//      }
+//     alert(`Remained Money: ${this.money}`);
+//     }
+// }
+// let person1 = new Person('ola','happy', 40, 100);
+// person1.sleep(15);
+// person1.eat(2);
+// person1.buy(3);
+
+//Using OLOO:
+// let Person = {
+//   init(fullName, sleepMode, money, healthRate) {
+//     this.fullName = fullName;
+//     this.sleepMode = sleepMode;
+//     this.money = money;
+//     this.healthRate = healthRate;
+//     return this
+//   },
+//   sleep(hours){
+//         if(hours == 7)
+//             this.sleepMode = 'happy';
+//         else if(hours < 7)
+//             this.sleepMode = 'tired';
+//         else if(hours > 7)
+//             this.sleepMode = 'lazy';
+//         alert(`Sleep Mode : ${this.sleepMode}`);
+//   },
+//   eat(meals){
+//         switch(meals){
+//         case 3:{
+//             this.healthRate = 100;
+//             break;
+//         }
+//         case 2: {
+//             this.healthRate = 75;
+//             break;
+//         }
+//         case 1:{
+//             this.healthRate = 50;
+//             break;
+//         }
+//         }
+//         alert(`Health Rate : ${this.healthRate} `);    
+//   },
+//   buy(items){
+//      if (items != undefined){
+//         for(let i=1; i <= items; i++)
+//             this.money -= 10;
+//      }
+//         alert(`Remained Money: ${this.money}`); 
+//   },
+
+// }
+
+// let person1 = Object.create(Person).init('ola','happy', 40, 100);
+// person1.sleep(15);
+// person1.eat(2);
+// person1.buy(3);
+
+
+//Using Factory Functions:
+
+// function Person (fullName, sleepMode, money, healthRate) {
+//   return {
+//     fullName,
+//     sleepMode,
+//     money,
+//     healthRate,
+//     sleep (hours){
+//         if(hours == 7)
+//             sleepMode = 'happy';
+//         else if(hours < 7)
+//             sleepMode = 'tired';
+//         else if(hours > 7)
+//             sleepMode = 'lazy';
+//         alert(`Sleep Mode : ${sleepMode}`);
+
+//     },
+//     eat(meals){
+//         switch(meals){
+//         case 3:{
+//             healthRate = 100;
+//             break;
+//         }
+//         case 2: {
+//             healthRate = 75;
+//             break;
+//         }
+//         case 1:{
+//             healthRate = 50;
+//             break;
+//         }    
+//         }
+//             alert(`Health Rate : ${healthRate} `);    
+//   },
+//     buy(items){
+//         if (items != undefined){
+//         for(let i=1; i <= items; i++)
+//             money -= 10;
+//         }
+//         alert(`Remained Money: ${money}`); 
+//   }
+
+//   }
+// }
+// let person1 = Person('ola','happy',100,50)
+// person1.sleep();
+// person1.eat();
+// person1.buy();
+
+
+        </script>
+    </body>
+</html>
